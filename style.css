@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: lightgray;
+    padding: 8px 16px;
+    justify-content: center;
+    gap: 780px;
+    align-items: center;
+}
+
+.header > div {
+    font-size: 32px;
+}
+
+.main-content {
+    align-self: center;
+    min-width: 920px;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main-content > div {
+    flex: 1;
+    outline: 1px solid black;
+}
+
+.information,
+.catalogue,
+.about,
+.order {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.information > div,
+.catalogue > div, 
+.about > div,
+.order > div {
+    flex: 1;
+}
+
+.information > .description,
+.catalogue > .description,
+.about > .description,
+.order > .order-action {
+    border-right: 1px solid black;
+}
+
+.catalogue > .description {
+    flex: 2;
+}
+
+.about > .description {
+    flex: 3;
+}
+
+.main-content > .order {
+    flex: 2;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: lightgray;
+    justify-content: center;
+    gap: 84px;
+    padding: 12px;
+}
+
+.footer > .logo {
+    font-size: 32px;
+    margin-top: -44px;
+    background-color: lightgray;
+    padding: 32px;
+    border-radius: 96px;
+}
+
+.footer > .links {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 32px;
+    font-size: 18px;
+}
+
+.footer  ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
