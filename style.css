@@ -21,7 +21,7 @@ body {
 
 .main-content {
     align-self: center;
-    min-width: 920px;
+    max-width: 920px;
     flex: 1;
     display: flex;
     flex-flow: column nowrap;
@@ -29,7 +29,6 @@ body {
 
 .main-content > div {
     flex: 1;
-    outline: 1px solid black;
 }
 
 .information,
@@ -38,12 +37,18 @@ body {
 .order {
     display: flex;
     flex-flow: row nowrap;
+    border-bottom: 1px solid black;
+}
+
+.order {
+    border-bottom: 0px;
 }
 
 .information > div,
 .catalogue > div, 
 .about > div,
 .order > div {
+    padding: 48px 32px;
     flex: 1;
 }
 
@@ -64,6 +69,45 @@ body {
 
 .main-content > .order {
     flex: 2;
+}
+
+.information > .description,
+.catalogue > .description, 
+.about > .description {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.information .title,
+.catalogue .title,
+.about .title {
+    font-size: 24px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+.information .text,
+.catalogue .text,
+.about .text {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.order-action {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.order-action .bread-image {
+    width: 100px;
+    height: 100px;
+}
+
+.order-action .text {
+    font-size: 32px;
 }
 
 
