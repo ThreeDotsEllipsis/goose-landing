@@ -10,9 +10,11 @@ body {
     flex-flow: row nowrap;
     background-color: lightgray;
     padding: 8px 16px;
-    justify-content: center;
-    gap: 780px;
+    justify-content: space-between;
+    /* gap: 780px; */
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .header > div {
@@ -20,11 +22,12 @@ body {
 }
 
 .main-content {
-    align-self: center;
-    max-width: 920px;
+    /* align-self: center; */
+    /* max-width: 920px; */
     flex: 1;
     display: flex;
     flex-flow: column nowrap;
+    padding: 32px 0px;
 }
 
 .main-content > div {
@@ -37,7 +40,7 @@ body {
 .order {
     display: flex;
     flex-flow: row nowrap;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid darkgray;
 }
 
 .order {
@@ -48,7 +51,7 @@ body {
 .catalogue > div, 
 .about > div,
 .order > div {
-    padding: 48px 32px;
+    padding: 64px 48px;
     flex: 1;
 }
 
@@ -56,7 +59,7 @@ body {
 .catalogue > .description,
 .about > .description,
 .order > .order-action {
-    border-right: 1px solid black;
+    border-right: 1px solid darkgray;
 }
 
 .catalogue > .description {
@@ -82,7 +85,7 @@ body {
 .information .title,
 .catalogue .title,
 .about .title {
-    font-size: 24px;
+    font-size: 32px;
     padding-bottom: 8px;
     padding-left: 16px;
 }
@@ -91,7 +94,7 @@ body {
 .catalogue .text,
 .about .text {
     text-align: justify;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .order-action {
@@ -107,7 +110,7 @@ body {
 }
 
 .order-action .text {
-    font-size: 32px;
+    font-size: 38px;
 }
 
 
@@ -115,8 +118,8 @@ body {
     display: flex;
     flex-flow: row nowrap;
     background-color: lightgray;
-    justify-content: center;
-    gap: 84px;
+    justify-content: space-between;
+    /* gap: 84px; */
     padding: 12px;
 }
 
@@ -129,6 +132,8 @@ body {
 }
 
 .footer > .links {
+    flex: 1;
+    justify-content: center;
     display: flex;
     flex-flow: row nowrap;
     gap: 32px;
