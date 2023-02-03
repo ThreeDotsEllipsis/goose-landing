@@ -15,7 +15,15 @@ catalogueImage.addEventListener("mouseout", () => {
 });
 
 navButton.addEventListener("click", () => {
-    console.log(navBar.style.bottom)
+    // console.log(navBar.style.bottom)
+
+    if (navButton.classList.contains("active")) {
+        navButton.classList.remove("active");
+    }
+    else {
+        navButton.classList.add("active");
+    }
+
     if (navBar.style.top == "0px") {
         navBar.style.top = "";
     }

@@ -15,21 +15,43 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    /* z-index: 2; */
+    z-index: 1;
 }
 
 .header .nav-bar {
     width: 300px;
-    height: 600px;
+    height: 500px;
     position: absolute;
     background-color: lightgray;
     /* border: 1px solid black; */
     right: 0;
-    top: -604px;
+    top: -500px;
     transition: top 0.4s;
+    /* margin-right: 16px; */
+    /* z-index: -1; */
 }
 
-.header > div {
+.nav-bar .nav-bar-list {
+    padding-top: 64px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 56px;
+    align-items: center;
+}
+
+.nav-bar .nav-bar-list button {
+    font-size: 36px;
+    border: 0px;
+    background-color: transparent;
+    padding: 16px;
+}
+
+.nav-bar .nav-bar-list button:hover {
+    color: white;
+}
+
+.header > .logo {
     font-size: 32px;
 }
 
@@ -41,10 +63,14 @@ body {
     border: 0px;
     z-index: 1;
     transition: transform 0.3s;
+    padding: 0px 16px;
 }
 
 .header > button:hover {
     color: white;
+}
+
+.header > button.active {
     transform: rotate(-90deg);
 }
 
