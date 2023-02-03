@@ -15,10 +15,37 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
+    /* z-index: 2; */
+}
+
+.header .nav-bar {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    background-color: lightgray;
+    /* border: 1px solid black; */
+    right: 0;
+    top: -604px;
+    transition: top 0.4s;
 }
 
 .header > div {
     font-size: 32px;
+}
+
+.header > button {
+    font-size: 36px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.header > button:hover {
+    color: white;
+    transform: rotate(-90deg);
 }
 
 .main-content {
