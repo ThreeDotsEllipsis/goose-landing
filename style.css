@@ -22,12 +22,12 @@ body {
 }
 
 .main-content {
-    /* align-self: center; */
-    /* max-width: 920px; */
+    align-self: center;
+    max-width: 1200px;
     flex: 1;
     display: flex;
     flex-flow: column nowrap;
-    padding: 32px 0px;
+    padding: 32px 24px;
 }
 
 .main-content > div {
@@ -97,6 +97,16 @@ body {
     font-size: 24px;
 }
 
+.order > .order-action{
+    border: 0px solid #000;
+}
+
+.catalogue > .description {
+    border: 0px;
+    border-left: 1px solid darkgray;
+    transition: padding 0.3s;
+}
+
 .order-action {
     display: flex;
     flex-flow: column nowrap;
@@ -111,6 +121,24 @@ body {
 
 .order-action .text {
     font-size: 38px;
+}
+
+.catalogue .image {
+    padding: 16px;
+}
+
+.catalogue img {
+    width: 420px;
+    height: auto;
+    /* border-radius: 32px; */
+    transition: scale 0.3s;
+    transition: padding 0.3s;
+}
+
+.catalogue img:hover {
+    /* width: 430px; */
+    scale: 1.04;
+    padding: 8px;
 }
 
 
@@ -133,11 +161,13 @@ body {
 
 .footer > .links {
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
     flex-flow: row nowrap;
-    gap: 32px;
+    gap: 48px;
     font-size: 18px;
+    padding-left: 48px;
+    /* padding-right: 48px; */
 }
 
 .footer  ul {
