@@ -85,14 +85,17 @@ body {
 
 .main-content > div {
     flex: 1;
+}
+
+.main-content > div > div {
     position: relative;
-    bottom: -30px;
+    bottom: -24px;
     /* color: transparent; */
     visibility: hidden;
-    transition: bottom 1s;
-    /* transition: visibility 1s; */
+    transition: bottom 1.3s, visibility 1s, padding 0.3s;
 }
-.main-content > div.in-view {
+
+.main-content > div > div.in-view {
     bottom: 0px;
     visibility: visible;
 }
@@ -168,7 +171,6 @@ body {
 .catalogue > .description {
     border: 0px;
     border-left: 1px solid darkgray;
-    transition: padding 0.3s;
 }
 
 .order-action {
@@ -179,8 +181,9 @@ body {
 }
 
 .order-action .bread-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
 }
 
 .order-action .text {

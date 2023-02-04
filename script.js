@@ -4,7 +4,7 @@ let catalogueDescription = document.querySelector(".catalogue .description");
 let navButton = document.querySelector(".nav-button");
 let navBar = document.querySelector(".nav-bar");
 
-let divs = document.querySelectorAll(".main-content > div");
+let mainContentElements = document.querySelectorAll(".main-content > div > div");
 
 catalogueImage.addEventListener("mouseover", () => {
     catalogueDescription.style.paddingRight = "32px";
@@ -39,7 +39,9 @@ function checkVisible(elm) {
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 }
 
-divs.forEach((div) => {
+mainContentElements.forEach((div) => {
+    div.classList.add("in-view");
+
     window.addEventListener("scroll", () => {
         // let orderNode = document.querySelector(".order");
         if (checkVisible(div)) {
