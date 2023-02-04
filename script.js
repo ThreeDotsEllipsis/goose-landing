@@ -6,9 +6,14 @@ let navBar = document.querySelector(".nav-bar");
 
 let mainContentElements = document.querySelectorAll(".main-content > div > div");
 
+function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
 catalogueImage.addEventListener("mouseover", () => {
     catalogueDescription.style.paddingRight = "32px";
-    // catalogueDescription.style.backgroundColor = "black";
 });
 
 catalogueImage.addEventListener("mouseout", () => {
@@ -16,8 +21,6 @@ catalogueImage.addEventListener("mouseout", () => {
 });
 
 navButton.addEventListener("click", () => {
-    // console.log(navBar.style.bottom)
-
     if (navButton.classList.contains("active")) {
         navButton.classList.remove("active");
     }
@@ -32,12 +35,6 @@ navButton.addEventListener("click", () => {
         navBar.style.top = "0px";
     }
 });
-
-function checkVisible(elm) {
-    var rect = elm.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-}
 
 mainContentElements.forEach((div) => {
     div.classList.add("in-view");
