@@ -1,9 +1,10 @@
 let catalogueImage = document.querySelector(".catalogue .image");
 let catalogueDescription = document.querySelector(".catalogue .description");
 
-
 let navButton = document.querySelector(".nav-button");
 let navBar = document.querySelector(".nav-bar");
+
+let divs = document.querySelectorAll(".main-content > div");
 
 catalogueImage.addEventListener("mouseover", () => {
     catalogueDescription.style.paddingRight = "32px";
@@ -31,3 +32,23 @@ navButton.addEventListener("click", () => {
         navBar.style.top = "0px";
     }
 });
+
+function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
+divs.forEach((div) => {
+    window.addEventListener("scroll", () => {
+        // let orderNode = document.querySelector(".order");
+        if (checkVisible(div)) {
+            div.classList.add("in-view");
+        }
+        else {
+            div.classList.remove("in-view");
+        }
+    });
+});
+
+

@@ -85,6 +85,16 @@ body {
 
 .main-content > div {
     flex: 1;
+    position: relative;
+    bottom: -30px;
+    /* color: transparent; */
+    visibility: hidden;
+    transition: bottom 1s;
+    /* transition: visibility 1s; */
+}
+.main-content > div.in-view {
+    bottom: 0px;
+    visibility: visible;
 }
 
 .information,
@@ -99,6 +109,7 @@ body {
 .order {
     border-bottom: 0px;
 }
+
 
 .information > div,
 .catalogue > div, 
