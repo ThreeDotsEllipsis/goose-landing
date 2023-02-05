@@ -9,7 +9,7 @@ let mainContentElements = document.querySelectorAll(".main-content > div > div")
 function checkVisible(elm) {
     var rect = elm.getBoundingClientRect();
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= -64);
 }
 
 catalogueImage.addEventListener("mouseover", () => {
@@ -43,6 +43,7 @@ mainContentElements.forEach((div) => {
         // let orderNode = document.querySelector(".order");
         if (checkVisible(div)) {
             div.classList.add("in-view");
+            console.log(div);
         }
         else {
             div.classList.remove("in-view");
