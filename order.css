@@ -5,9 +5,25 @@
     padding: 20px;
 }
 
+.image-display {
+    height: 400px;
+    padding: 20px;
+}
+
 .image img {
     width: 400px;
     height: auto;
+    transition: scale 0.3s, opacity 1s, right 1s; 
+    opacity: 0;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.image .chosen {
+    opacity: 1;
+    right: 8px;
 }
 
 .size-buttons,
