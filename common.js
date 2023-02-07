@@ -1,6 +1,3 @@
-let catalogueImage = document.querySelector(".catalogue .image");
-let catalogueDescription = document.querySelector(".catalogue .description");
-
 let navButton = document.querySelector(".nav-button");
 let navBar = document.querySelector(".nav-bar");
 
@@ -12,12 +9,20 @@ function checkVisible(elm) {
     return !(rect.bottom < 0 || rect.top - viewHeight >= -64);
 }
 
-catalogueImage.addEventListener("mouseover", () => {
-    catalogueDescription.style.paddingRight = "32px";
-});
+mainContentElements.forEach((div) => {
+    if (checkVisible(div)) {
+        div.classList.add("in-view");
+    }
 
-catalogueImage.addEventListener("mouseout", () => {
-    catalogueDescription.style.paddingRight = "48px";
+    window.addEventListener("scroll", () => {
+        if (checkVisible(div)) {
+            div.classList.add("in-view");
+            console.log(div);
+        }
+        else {
+            div.classList.remove("in-view");
+        }
+    });
 });
 
 navButton.addEventListener("click", () => {
@@ -35,20 +40,3 @@ navButton.addEventListener("click", () => {
         navBar.style.top = "0px";
     }
 });
-
-mainContentElements.forEach((div) => {
-    div.classList.add("in-view");
-
-    window.addEventListener("scroll", () => {
-        // let orderNode = document.querySelector(".order");
-        if (checkVisible(div)) {
-            div.classList.add("in-view");
-            console.log(div);
-        }
-        else {
-            div.classList.remove("in-view");
-        }
-    });
-});
-
-

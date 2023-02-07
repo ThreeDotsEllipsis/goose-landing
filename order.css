@@ -1,0 +1,11 @@
+.main-content > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+}
