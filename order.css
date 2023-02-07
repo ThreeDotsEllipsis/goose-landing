@@ -18,7 +18,7 @@
     height: 400px;
     position: absolute;
     top: 0;
-    right: -100px;
+    right: -96px;
 }
 
 .image .chosen {
@@ -31,6 +31,14 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 16px;
+}
+
+.size-buttons .chosen {
+    background-color: darkgray;
+}
+
+.color-buttons .chosen {
+    background-color: darkgray;
 }
 
 .main-content button {
