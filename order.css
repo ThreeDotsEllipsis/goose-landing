@@ -2,10 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 20px;
 }
 
 .image img {
     width: 400px;
     height: auto;
+}
+
+.size-buttons,
+.color-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+}
+
+.main-content button {
+    font-size: 36px;
+    border: 0px;
+    background-color: lightgray;
+    padding: 8px 16px;
+    border-radius: 4px;
+    flex: 1;
+} 
+
+.main-content button:hover {
+    background-color: gray;
+    color: white;
 }
