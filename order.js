@@ -42,14 +42,20 @@ colorButtons.forEach((color) => {
             chosenImage.classList.remove("chosen");
 
             let chose = document.querySelector(`.image .${color.textContent}`);
+            chose.style.right = "8px";
 
-            if (chose.id > chosenImage.id) {
-                chose.style.right = "0px";
-                chosenImage.style.right = "96px";
+            let element = chose;
+
+            while (element.nextElementSibling) {
+                element = element.nextElementSibling;
+                element.style.right = "-96px";
             }
-            else {
-                chose.style.right = "0px";
-                chosenImage.style.right = "-96px";
+
+            element = chose;
+
+            while (element.previousElementSibling) {
+                element = element.previousElementSibling;
+                element.style.right = "96px";
             }
 
             chose.classList.add("chosen");
