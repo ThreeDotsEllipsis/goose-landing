@@ -42,9 +42,21 @@ colorButtons.forEach((color) => {
             chosenImage.classList.remove("chosen");
 
             let chose = document.querySelector(`.image .${color.textContent}`);
+
+            if (chose.id > chosenImage.id) {
+                chose.style.right = "0px";
+                chosenImage.style.right = "96px";
+            }
+            else {
+                chose.style.right = "0px";
+                chosenImage.style.right = "-96px";
+            }
+
             chose.classList.add("chosen");
             chosenImage = chose;
             chosenImage.style.scale = sizeToScale(chosenSizeButton.textContent);
         }
     });
 });
+
+

@@ -1,13 +1,23 @@
+.main-content > div {
+    border-bottom: 1px darkgray solid;
+}
+
 .main-content > div > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 21px;
+}
+
+.main-content > .order-button {
+    border-bottom: 0px;
 }
 
 .image-display {
     height: 400px;
-    padding: 20px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
 
 .image img {
@@ -18,7 +28,14 @@
     height: 400px;
     position: absolute;
     top: 0;
+}
+
+.image .brown {
     right: -96px;
+}
+
+.image .black {
+    right: 96px;
 }
 
 .image .chosen {
@@ -54,3 +71,4 @@
     background-color: gray;
     color: white;
 }
+
