@@ -81,6 +81,10 @@
     transition: padding 0.3s, scale 0.3s;
 }
 
+.image:hover + .description {
+    padding-right: 32px;
+}
+
 .catalogue img:hover {
     scale: 1.04;
     padding: 8px;
