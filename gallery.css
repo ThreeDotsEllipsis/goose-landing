@@ -1,0 +1,26 @@
+
+.main-content {
+    max-width: none;
+}
+
+.main-content > div > div {
+    padding: 0px;
+    flex: 0;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.images img {
+    width: 400px;
+    height: auto;
+    transition: scale 0.3s;
+}
+
+.images img:hover {
+    scale: 1.06;
+}
