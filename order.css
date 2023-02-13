@@ -53,24 +53,24 @@
 }
 
 .size-buttons .chosen {
-    background-color: darkgray;
+    text-decoration-line: underline;
 }
 
 .color-buttons .chosen {
-    background-color: darkgray;
+    text-decoration-line: underline;
 }
 
 .main-content button {
     font-size: 36px;
     border: 0px;
-    background-color: lightgray;
+    background-color: var(--main-color);
     padding: 8px 16px;
     border-radius: 4px;
     flex: 1;
 } 
 
 .main-content button:hover {
-    background-color: gray;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--main-color);
 }
 

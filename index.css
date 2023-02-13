@@ -64,7 +64,7 @@
 .order-action .bread-image {
     width: 200px;
     height: 200px;
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 .order-action .text {

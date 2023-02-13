@@ -1,8 +1,15 @@
+:root {
+    --bg-color: #3D3D3D;
+    --main-color: #FAFFFF;
+    --text-color: #080808;
+}
+
 body {
     margin: 0px;
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    background-color: var(--main-color);
 }
 
 .main-content {
@@ -32,7 +39,7 @@ body {
 .header {
     display: flex;
     flex-flow: row nowrap;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     padding: 8px 16px;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +52,7 @@ body {
     width: 300px;
     height: 500px;
     position: absolute;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     right: 0;
     top: -500px;
     transition: top 0.4s;
@@ -65,16 +72,16 @@ body {
     border: 0px;
     background-color: transparent;
     padding: 24px;
-    color: black;
     text-decoration: none;
+    color: var(--main-color);
 }
 
 .header a:visited {
-    color: black;
+    color: var(--main-color);
 }
 
 .header a:hover {
-    color: white;
+    color: black;
 }
 
 .header > .logo {
@@ -82,6 +89,7 @@ body {
 }
 
 .header > button {
+    color: var(--main-color);
     font-size: 36px;
     background-color: transparent;
     margin: 0px;
@@ -93,7 +101,7 @@ body {
 }
 
 .header > button:hover {
-    color: white;
+    color: black;
 }
 
 .header > button.active {
@@ -103,7 +111,7 @@ body {
 .footer {
     display: flex;
     flex-flow: row nowrap;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     justify-content: space-between;
     padding: 12px;
 }
@@ -111,9 +119,10 @@ body {
 .footer > .logo {
     font-size: 32px;
     margin-top: -44px;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     padding: 32px;
     border-radius: 100%;
+    color: var(--main-color);
 }
 
 .footer > .links {
@@ -130,4 +139,9 @@ body {
     margin: 0px;
     list-style-type: none;
     padding: 0px;
+}
+
+.footer div,
+.footer li {
+    color: var(--main-color);
 }
