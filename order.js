@@ -8,26 +8,12 @@ let chosenColorButton = document.querySelector(".color-buttons > .chosen");
 let gooseImages = document.querySelectorAll(".image img");
 let chosenImage = document.querySelector(".image .chosen");
 
-function sizeToScale(size) {
-    if (size == "50cm") {
-        return "0.9";
-    }
-    else if (size == "1m") {
-        return "1";
-    }
-    else if (size == "2m") {
-        return "1.1";
-    }
-}
-
 sizeButtons.forEach((size) => {
     size.addEventListener("click", () => {
         if (chosenSizeButton != size) {
             chosenSizeButton.classList.remove("chosen");
             size.classList.add("chosen");
             chosenSizeButton = size;
-
-            chosenImage.style.scale = sizeToScale(size.textContent);
         }
     });
 });
@@ -64,7 +50,6 @@ colorButtons.forEach((color) => {
 
             chose.classList.add("chosen");
             chosenImage = chose;
-            chosenImage.style.scale = sizeToScale(chosenSizeButton.textContent);
         }
     });
 });
