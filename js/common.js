@@ -6,12 +6,12 @@ body.insertAdjacentHTML(
     <div class="header">
         <div class="nav-bar">
             <ul class="nav-bar-list">
-                <li> <a href="order.html">Order</a> </li>
-                <li> <a href="gallery.html">Gallery</a> </li>
-                <li> <a href="about.html">Contacts</a> </li>
+                <li> <a href="/html/order.html">Order</a> </li>
+                <li> <a href="/html/gallery.html">Gallery</a> </li>
+                <li> <a href="/html/about.html">Contacts</a> </li>
             </ul>
         </div>
-        <div class="logo"><a href="index.html">GOOSE</a></div>
+        <div class="logo"><a href="/index.html">GOOSE</a></div>
         <button type="button" class="nav-button">≣</button>
     </div>
     `
