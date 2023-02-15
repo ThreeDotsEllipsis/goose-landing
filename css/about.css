@@ -1,3 +1,7 @@
+a[href*="about"] {
+    text-decoration-line: underline;
+}
+
 .contact-info {
     border-bottom: 1px solid darkgray;
 }

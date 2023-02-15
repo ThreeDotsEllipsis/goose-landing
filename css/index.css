@@ -1,3 +1,7 @@
+.header > div > a {
+    text-decoration-line: underline;
+}
+
 .main-content > div {
     flex: 1;
     display: flex;
@@ -89,5 +93,6 @@
     scale: 1.04;
     padding: 8px;
 }
+
 
 
