@@ -4,6 +4,9 @@ body.insertAdjacentHTML(
     'afterbegin',
     `
     <div class="header">
+        <div class="logo"><a href="index.html">GOOSE</a></div>
+        <input id="nav-button" type="checkbox" name="nav-button" class="nav-button">
+        <label for="nav-button" class="nav-button-label">≣</label>
         <div class="nav-bar">
             <ul class="nav-bar-list">
                 <li> <a href="order.html">Order</a> </li>
@@ -11,8 +14,6 @@ body.insertAdjacentHTML(
                 <li> <a href="about.html">Contacts</a> </li>
             </ul>
         </div>
-        <div class="logo"><a href="index.html">GOOSE</a></div>
-        <button type="button" class="nav-button">≣</button>
     </div>
     `
 );
@@ -50,9 +51,6 @@ body.insertAdjacentHTML(
 );
 // --------------------------------------------------------------
 
-let navButton = document.querySelector(".nav-button");
-let navBar = document.querySelector(".nav-bar");
-
 let mainContentElements = document.querySelectorAll(".main-content > div > div");
 
 function checkVisible(elm) {
@@ -75,20 +73,4 @@ mainContentElements.forEach((div) => {
             div.classList.remove("in-view");
         }
     });
-});
-
-navButton.addEventListener("click", () => {
-    if (navButton.classList.contains("active")) {
-        navButton.classList.remove("active");
-    }
-    else {
-        navButton.classList.add("active");
-    }
-
-    if (navBar.style.top == "0px") {
-        navBar.style.top = "";
-    }
-    else {
-        navBar.style.top = "0px";
-    }
 });
