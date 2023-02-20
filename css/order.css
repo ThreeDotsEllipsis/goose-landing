@@ -68,6 +68,7 @@ a[href*="order"] {
     font-size: 36px;
     border: 0px;
     background-color: var(--main-color);
+    color: black;
     padding: 8px 16px;
     border-radius: 4px;
     flex: 1;
