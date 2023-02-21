@@ -21,6 +21,8 @@ a[href*="order"] {
     padding: 16px 32px;
     padding-top: 8px;
     padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .image-display .image {
@@ -29,6 +31,7 @@ a[href*="order"] {
 
 .image {
     height: 400px;
+    max-width: 400px;
     overflow: hidden;
 }
 
@@ -49,6 +52,15 @@ a[href*="order"] {
     right: 400px;
 }
 
+.image-array {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: right 1s;
+    right: 0px;
+}
+
+
 .size-buttons,
 .color-buttons {
     display: flex;
@@ -64,7 +76,17 @@ a[href*="order"] {
     text-decoration-line: underline;
 }
 
+.main-content input {
+    display: none;
+}
+
+.main-content input:checked + label {
+    text-decoration-line: underline;
+}
+
+.main-content label,
 .main-content button {
+    text-align: center;
     font-size: 36px;
     border: 0px;
     background-color: var(--main-color);
@@ -74,6 +96,7 @@ a[href*="order"] {
     flex: 1;
 } 
 
+.main-content label:hover,
 .main-content button:hover {
     background-color: var(--bg-color);
     color: var(--main-color);

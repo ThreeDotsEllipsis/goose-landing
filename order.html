@@ -16,25 +16,37 @@
     <div class="main-content">
         <div class="image-display">
             <div class="image">
-                <img class="black" src="imgs/black.avif" alt="">
-                <img class="white chosen" src="imgs/white.avif" alt="">
-                <img class="brown" src="imgs/brown.avif" alt="">
+                <div class="image-array">
+                    <img class="black" src="imgs/black.avif" alt="">
+                    <img class="white chosen" src="imgs/white.avif" alt="">
+                    <img class="brown" src="imgs/brown.avif" alt="">
+                </div>
             </div>
         </div>
 
         <div class="size-choice">
             <div class="size-buttons">
-                <button type="button">50cm</button>
-                <button type="button" class="chosen">1m</button>
-                <button type="button">2m</button>
+                <input id="50cm" type="radio" name="size">
+                <label for="50cm">50cm</label>
+
+                <input id="1m" type="radio" name="size" checked>
+                <label for="1m">1m</label>
+
+                <input id="2m" type="radio" name="size">
+                <label for="2m">2m</label>
             </div>
         </div>
 
         <div class="color-choice">
             <div class="color-buttons">
-                <button type="button">black</button>
-                <button type="button" class="chosen">white</button>
-                <button type="button">brown</button>
+                <input id="black" type="radio" name="color" data-id="-1">
+                <label for="black">black</label>
+
+                <input id="white" type="radio" name="color" checked data-id="0">
+                <label for="white">white</label>
+
+                <input id="brown" type="radio" name="color" data-id="1">
+                <label for="brown">brown</label>
             </div>
         </div>
 
