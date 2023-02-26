@@ -6,11 +6,6 @@
     flex: 1;
     display: flex;
     flex-flow: row nowrap;
-    border-bottom: 1px solid darkgray;
-}
-
-.main-content > .order {
-    border-bottom: 0px;
 }
 
 .main-content .description {

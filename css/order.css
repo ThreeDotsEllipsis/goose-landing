@@ -2,19 +2,11 @@ a[href*="order"] {
     text-decoration-line: underline;
 }
 
-.main-content > div {
-    border-bottom: 1px darkgray solid;
-}
-
 .main-content > div > div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 21px;
-}
-
-.main-content > .order-button {
-    border-bottom: 0px;
 }
 
 .image-display {
