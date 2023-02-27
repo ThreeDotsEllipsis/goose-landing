@@ -74,7 +74,7 @@ a[href*="order"] {
 .image img {
     width: 400px;
     height: 400px;
-    transition: scale 0.3s, opacity 1s 1s, right 1s; 
+    transition: scale 0.3s, opacity 1s 1s, right 1s, display 0s 1s; 
     position: absolute;
     right: 0px;
     top: 0;
@@ -88,6 +88,17 @@ a[href*="order"] {
     right: 0px;
 }
 
+.main-content .index-radio {
+    position: absolute;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.image-display input {
+    pointer-events: none;
+    transform: scale(1.8);
+}
 
 .size-buttons,
 .color-buttons {
@@ -104,11 +115,11 @@ a[href*="order"] {
     text-decoration-line: underline;
 }
 
-.main-content input {
+.order-options input {
     display: none;
 }
 
-.main-content input:checked + label {
+.order-options input:checked + label {
     text-decoration-line: underline;
 }
 

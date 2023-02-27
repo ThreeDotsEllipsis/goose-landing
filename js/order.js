@@ -31,6 +31,7 @@ scrollRightButton.addEventListener("click", () => {
         index += 1;
         gooseArray.style.right = `${400 * index}px`;
     }
+    document.querySelector(`input[id="${index}"]`).checked = true;
 });
 
 scrollLeftButton.addEventListener("click", () => {
@@ -38,4 +39,5 @@ scrollLeftButton.addEventListener("click", () => {
         index -= 1;
         gooseArray.style.right = `${400 * index}px`;
     }
+    document.querySelector(`input[id="${index}"]`).checked = true;
 });
