@@ -74,7 +74,7 @@ a[href*="order"] {
 .image img {
     width: 400px;
     height: 400px;
-    transition: scale 0.3s, opacity 1s 1s, right 1s, display 0s 1s; 
+    transition: scale 0.3s, opacity 0.5s, right 1s, display 0s 1s; 
     position: absolute;
     right: 0px;
     top: 0;

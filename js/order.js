@@ -8,12 +8,12 @@ let gooseImages = document.querySelectorAll(".image-array img")
 colorButtons.forEach((color) => {
     color.addEventListener("click", () => {
         gooseImages.forEach((el) => {
-            el.style.display = "none";
+            el.style.opacity = "0";
         });
 
         let imgs = document.querySelectorAll(`[src*="${color.id}"]`)
         imgs.forEach((el) => {
-            el.style.display = "block";
+            el.style.opacity = "1";
         });
     });
 });
