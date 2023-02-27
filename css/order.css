@@ -80,14 +80,6 @@ a[href*="order"] {
     top: 0;
 }
 
-.image .brown {
-    right: -400px;
-}
-
-.image .black {
-    right: 400px;
-}
-
 .image-array {
     height: 100%;
     width: 100%;
