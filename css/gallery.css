@@ -4,6 +4,7 @@ a[href*="gallery"] {
 
 .main-content {
     max-width: none;
+    justify-content: center;
 }
 
 .main-content > div > div {
