@@ -1,5 +1,6 @@
 .delimiter {
     border-bottom: 1px solid var(--bg-color);
+    align-self: stretch; /* Delimiters dissapear if items are center aligned */
 }
 
 .delimiter.vertical {
@@ -19,6 +20,7 @@
 .main-content > div:not(.delimiter) {
     flex: 1;
     display: flex;
+    align-items: center;
 }
 
 .main-content > div > div:not(.delimiter) {
@@ -47,6 +49,7 @@
 
 .main-content .catalogue .description {
     flex: 2;
+    transition: padding 0.3s, scale 0.3s;
 }
 
 .main-content .about .description {
@@ -82,3 +85,22 @@
     color: var(--main-color);
 }
 
+.main-content .catalogue .image {
+    padding: 1rem;
+    transition: padding 0.3s, scale 0.3s;
+}
+
+.catalogue img {
+    width: 400px;
+    height: auto;
+}
+
+.catalogue .image:hover {
+    scale: 1.04;
+    padding: 1.2rem;
+}
+
+.catalogue .image:hover ~ .description {
+    padding-left: 1.2rem;
+    padding-right: 0.4rem;
+}
