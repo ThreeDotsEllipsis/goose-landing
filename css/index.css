@@ -1,7 +1,84 @@
+.delimiter {
+    border-bottom: 1px solid var(--bg-color);
+}
+
+.delimiter.vertical {
+    border: none;
+    border-right: 1px solid var(--bg-color);
+}
+
 .main-content {
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
-    max-width: 1200px;
+    width: 1200px;
+    align-self: center;
+
+}
+
+.main-content > div:not(.delimiter) {
+    flex: 1;
+    display: flex;
+}
+
+.main-content > div > div:not(.delimiter) {
+    flex: 1;
+    padding: 2.5rem 1rem;
+}
+
+.main-content .title,
+.main-content .text {
+    color: var(--text-color);
+}
+
+.main-content .text {
+    text-align: justify;
+}
+
+.main-content .title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.main-content .info .description {
+    flex: 2;
+}
+
+.main-content .catalogue .description {
+    flex: 2;
+}
+
+.main-content .about .description {
+    flex: 3;
+}
+
+.main-content .order {
     align-self: center;
 }
+
+.order > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.order .image {
+    width: 200px;
+    height: 200px;
+    background-color: var(--bg-color);
+}
+
+.order button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+
+.order button:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
