@@ -26,6 +26,7 @@ header {
     align-items: center;
     background-color: var(--bg-color);
     padding: 0.5rem;
+    top: 0;
 }
 
 header .logo a {
@@ -94,7 +95,9 @@ header [for="nav-button"]:hover {
 }
 
 .main-content {
-    flex: 1;
+    /* flex: 1; */
+    /* height: 200vh; */
+    height: 3000px;
     background-color: var(--main-color);
 }
 
@@ -102,15 +105,14 @@ footer {
     display: flex;
     background-color: var(--bg-color);
     flex-flow: row nowrap;
-    height: 3.4rem;
 }
 
 footer .logo {
     color: var(--main-color);
-    padding: 1.5rem 2rem;
+    padding: 0.8rem 2.5rem;
     position: relative;
     border-radius: 100%;
-    top: -36px;
+    top: -24px;
     background-color: var(--bg-color);
     font-size: 1.4rem;
     margin: 0px 0.5rem;
