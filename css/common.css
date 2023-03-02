@@ -1,0 +1,131 @@
+:root {
+    --main-color: #fafafa; 
+    --bg-color: #444;
+    --text-color: #0f0f0f;
+    --nav-height: 500px;
+
+    font-size: 24px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    top: 0;
+    z-index: 1;
+}
+
+header .logo a {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1;
+    padding: 0.4rem;
+    padding-top: 0.3rem;
+    vertical-align: center;
+}
+
+nav {
+    position: absolute;
+    height: var(--nav-height);
+    top: calc(0px - var(--nav-height));
+    right: 0;
+    transition: top 0.3s;
+    background-color: var(--bg-color);
+    width: calc(var(--nav-height) / 1.5);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+nav .nav-content {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+nav .nav-content a {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 0.6rem;
+}
+
+header input:checked ~ label {
+    transform: rotate(-90deg);
+}
+
+header input:checked ~ nav {
+    top: 0px;
+}
+
+header a:hover,
+header [for="nav-button"]:hover {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+.main-content {
+    flex: 1;
+    background-color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--bg-color);
+    flex-flow: row nowrap;
+}
+
+footer .logo {
+    color: var(--main-color);
+    padding: 0.8rem 2rem;
+    position: relative;
+    border-radius: 100%;
+    top: -24px;
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+    margin: 0px 0.5rem;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 42px;
+    padding-top: 0.5rem;
+    color: var(--main-color);
+    font-size: 0.9rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
