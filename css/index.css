@@ -12,20 +12,28 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
-    width: 1200px;
+    width: 1300px;
     align-self: center;
-
 }
 
 .main-content > div:not(.delimiter) {
     flex: 1;
     display: flex;
     align-items: center;
+    position: relative;
+    bottom: -24px;
+    opacity: 0;
+    transition: bottom 1s, opacity 1s;
+}
+
+.main-content > div:not(.delimiter).in-view {
+    opacity: 1;
+    bottom: 0;
 }
 
 .main-content > div > div:not(.delimiter) {
     flex: 1;
-    padding: 2.5rem 1rem;
+    padding: 4rem 1.5rem;
 }
 
 .main-content .title,
@@ -96,11 +104,11 @@
 }
 
 .catalogue .image:hover {
-    scale: 1.04;
-    padding: 1.2rem;
+    scale: 1.05;
+    padding: 1.3rem;
 }
 
 .catalogue .image:hover ~ .description {
-    padding-left: 1.2rem;
+    padding-left: 1.7rem;
     padding-right: 0.4rem;
 }
