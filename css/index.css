@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 header .logo a {
@@ -93,9 +93,38 @@ header [for="nav-button"]:hover {
     background-color: var(--main-color);
 }
 
-
-
 .main-content {
     flex: 1;
     background-color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--bg-color);
+    flex-flow: row nowrap;
+    height: 3.4rem;
+}
+
+footer .logo {
+    color: var(--main-color);
+    padding: 1.5rem 2rem;
+    position: relative;
+    border-radius: 100%;
+    top: -36px;
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+    margin: 0px 0.5rem;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 42px;
+    padding-top: 0.5rem;
+    color: var(--main-color);
+    font-size: 0.9rem;
+}
+
+footer ul {
+    list-style-type: none;
 }
