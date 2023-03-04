@@ -59,21 +59,20 @@
 .order .image {
     width: 200px;
     height: 200px;
-    background-color: var(--bg-color);
 }
 
 .order a {
     border: none;
     background-color: transparent;
     font-size: 1.4rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--main-color);
+    background-color: var(--bg-color);
 }
 
 .order a:hover {
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--text-color);
 }
 
 .main-content .catalogue .image {

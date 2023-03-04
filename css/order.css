@@ -1,13 +1,16 @@
-input[type="radio"] {
+.options input[type="radio"] {
     display: none;
 }
 
 .main-content {
-    max-width: 1300px;
+    width: 1500px;
     display: flex;
     align-self: center;
     align-items: center;
-    gap: 32px;
+    gap: 64px;
+    padding: 64px;
+    padding-right: 0px;
+    padding-left: 128px;
 }
 
 .main-content .options {
@@ -28,10 +31,10 @@ input[type="radio"] {
     padding: 16px;
 }
 
-.main-content div label:hover,
-.main-content .options button:hover {
+.main-content div label:hover {
     background-color: var(--bg-color);
     color: var(--main-color);
+    cursor: pointer;
 }
 
 .main-content div input:checked + label {
@@ -40,10 +43,106 @@ input[type="radio"] {
 
 .main-content .options button {
     border: none;
-    background-color: transparent;
     font-size: 1.4rem;
     padding: 16px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+.main-content .options button:hover {
+    background-color: var(--text-color);
+    cursor: pointer;
 }
 
 
+.main-content .image-view {
+    --image-view-size: 500px;
+    
+    position: relative;
+    width: var(--image-view-size);
+    height: var(--image-view-size);
+    margin-right: 36px;
+}
 
+.main-content .image-line img {
+    width: var(--image-view-size);
+    height: auto;
+}
+
+.main-content .image-line {
+    width: var(--image-view-size);
+    height: var(--image-view-size);
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+}
+
+.main-content .image-view button {
+    padding: 24px;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+}
+
+.main-content .image-view button:hover {
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+.main-content .image-view .back {
+    left: -72px;
+}
+
+.main-content .image-view .next {
+    right: -72px;
+}
+
+.main-content .index {
+    position: absolute;
+    bottom: -48px;
+    left: 45%;
+    z-index: 1;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 8px;
+}
+
+.main-content .index input {
+    appearance: none;
+
+    display: inline-block;
+    width: 16px; 
+    height: 16px;  
+    padding: 10px;
+    border: 5px solid var(--bg-color);
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
+}
+
+.main-content .index input::before {
+    display: inline-block;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 100%;
+    border: 1px;
+    background-color: var(--bg-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.main-content .index input:checked::before {
+    opacity: 1;
+}
