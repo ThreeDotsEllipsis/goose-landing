@@ -1,0 +1,26 @@
+.main-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .gallery {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 64px;
+}
+
+.main-content img {
+    width: 400px;
+    height: auto;
+    transition: scale 0.4s;
+}
+
+.main-content img:hover {
+    scale: 1.06;
+}
