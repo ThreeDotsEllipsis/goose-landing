@@ -20,29 +20,30 @@ body.insertAdjacentHTML(
 body.insertAdjacentHTML(
     'beforeend',
     `
-        <div class="footer">
-        <div class="logo">GOOSE</div>
-        <div class="links">
-            <div class="tel-num">89999999999</div>
-            <div class="address">
-                <ul class="address-list">
-                    <li>Headquater: Las Vegas</li>
-                    <li>Shipment: Glubinka</li>
+    <footer>
+        <div class="logo">Гусь</div>
+        <div class="contact-info">
+            <div class="tel-num">Телефон: 89999999999</div>
+            <div>
+                <ul class="address">
+                    <li>Офис: Лас Вегас</li>
+                    <li>Пункт Выдачи: Глубинка</li>
                 </ul>
             </div>
-            <div class="socials">
-                <ul class="socials-list">
+            <div>
+                <ul class="socials">
                     <li>Instagram: biggoose</li>
                     <li>Facebook: biggoose</li>
                 </ul>
             </div>
-            <div class="socials">
-                <ul class="socials-list">
+            <div>
+                <ul class="socials">
                     <li>VK: biggoose</li>
-                    <li>Email: biggoose@gmail.com</li>
+                    <li>E-mail: biggoose@gmail.com</li>
                 </ul>
             </div>
         </div>
+    </footer>
 `
 );
 

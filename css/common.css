@@ -1,3 +1,30 @@
+.delimiter {
+    border-bottom: 1px solid var(--bg-color);
+    align-self: stretch; /* Delimiters dissapear if items are center aligned */
+}
+
+.delimiter.vertical {
+    border: none;
+    border-right: 1px solid var(--bg-color);
+}
+
+.main-content {
+    flex: 1;
+    background-color: var(--main-color);
+}
+
+.main-content > div:not(.delimiter) {
+    position: relative;
+    bottom: -24px;
+    opacity: 0;
+    transition: bottom 1s, opacity 1s;
+}
+
+.main-content > div:not(.delimiter).in-view {
+    opacity: 1;
+    bottom: 0;
+}
+
 :root {
     --main-color: #fafafa; 
     --bg-color: #444;
@@ -93,11 +120,6 @@ header input:checked ~ nav {
 header a:hover,
 header [for="nav-button"]:hover {
     color: var(--bg-color);
-    background-color: var(--main-color);
-}
-
-.main-content {
-    flex: 1;
     background-color: var(--main-color);
 }
 

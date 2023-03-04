@@ -1,18 +1,8 @@
-.delimiter {
-    border-bottom: 1px solid var(--bg-color);
-    align-self: stretch; /* Delimiters dissapear if items are center aligned */
-}
-
-.delimiter.vertical {
-    border: none;
-    border-right: 1px solid var(--bg-color);
-}
-
 .main-content {
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
-    width: 1300px;
+    max-width: 1300px;
     align-self: center;
 }
 
@@ -20,15 +10,6 @@
     flex: 1;
     display: flex;
     align-items: center;
-    position: relative;
-    bottom: -24px;
-    opacity: 0;
-    transition: bottom 1s, opacity 1s;
-}
-
-.main-content > div:not(.delimiter).in-view {
-    opacity: 1;
-    bottom: 0;
 }
 
 .main-content > div > div:not(.delimiter) {
