@@ -38,6 +38,25 @@ function createImages(type) {
 
 }
 
+function switchImages(button) {
+    let index = Number(document.querySelector(".index input:checked").id);
+
+    if (button.target.classList.contains("back")) {
+        if (index > 0) {
+            index -= 1;
+        }
+    }
+    else {
+        if (index < imageLine.childNodes.length - 1) {
+            index += 1;
+        }
+    }
+
+    imageLine.style.left = `-${500 * index}px`;
+
+    document.querySelector(`input[id="${index}"]`).checked = true;
+}
+
 colorInputs.forEach((input) => {
     input.addEventListener("click", () => {
         imageLine.style.left = "0";
@@ -45,26 +64,8 @@ colorInputs.forEach((input) => {
     });
 });
 
-backButton.addEventListener("click", () => {
-    let index = Number(document.querySelector(".index input:checked").id);
-    if (index > 0) {
-        index -= 1;
-    }
-    imageLine.style.left = `-${500 * index}px`;
-
-    document.querySelector(`.index input[id="${index}"]`).checked = true;
-
-});
-
-nextButton.addEventListener("click", () => {
-    let index = Number(document.querySelector(".index input:checked").id);
-    if (index < imageLine.childNodes.length - 1) {
-        index += 1;
-    }
-    imageLine.style.left = `-${500 * index}px`;
-
-    document.querySelector(`input[id="${index}"]`).checked = true;
-});
+backButton.addEventListener("click", switchImages);
+nextButton.addEventListener("click", switchImages);
 
 createImages("white");
 
