@@ -1,3 +1,7 @@
+header a[href*="gallery"] {
+    text-decoration: underline;
+}
+
 .main-content {
     display: flex;
     flex-flow: row nowrap;

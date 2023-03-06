@@ -1,3 +1,7 @@
+header a[href*="about"] {
+    text-decoration: underline;
+}
+
 .main-content {
     display: flex;
     flex-flow: column nowrap;
