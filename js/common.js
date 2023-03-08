@@ -9,7 +9,7 @@ body.insertAdjacentHTML(
         <nav>
             <ul class="nav-content">
                 <li><a href="order.html">Заказать</a></li>
-                <li><a href="gallery.html">Галлерея</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="about.html">Контакты</a></li>
             </ul>
         </nav>
