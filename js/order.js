@@ -39,6 +39,8 @@ function createImages(type) {
 }
 
 function switchImages(button) {
+    let shiftAmount = document.querySelector(".image-view").offsetWidth;
+
     let index = Number(document.querySelector(".index input:checked").id);
 
     if (button.target.classList.contains("back")) {
@@ -52,7 +54,8 @@ function switchImages(button) {
         }
     }
 
-    imageLine.style.left = `-${500 * index}px`;
+    console.log(shiftAmount)
+    imageLine.style.left = `-${shiftAmount * index}px`;
 
     document.querySelector(`input[id="${index}"]`).checked = true;
 }

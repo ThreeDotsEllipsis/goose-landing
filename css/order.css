@@ -10,22 +10,22 @@ header a[href*="order"] {
     display: flex;
     align-self: center;
     align-items: center;
-    gap: 64px;
-    /* padding: 64px; */
-    /* padding-right: 0px; */
-    /* padding-left: 128px; */
+    gap: 24px;
+    padding: 64px;
+    padding-right: 32px;
+    padding-left: 98px;
 }
 
 .main-content .options {
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
     gap: 24px;
     font-size: 1.4rem;
 }
 
 .main-content .options div {
     display: flex;
-    gap: 24px;
 }
 
 .main-content div label {
@@ -45,6 +45,7 @@ header a[href*="order"] {
 }
 
 .main-content .options button {
+    flex: 1;
     border: none;
     font-size: 1.4rem;
     padding: 16px;
@@ -59,12 +60,11 @@ header a[href*="order"] {
 
 
 .main-content .image-view {
-    --image-view-size: 500px;
-    
+    --image-view-size: min(500px, 30vw);
     position: relative;
     width: var(--image-view-size);
     height: var(--image-view-size);
-    margin-right: 36px;
+    margin-right: 66px;
     display: flex;
     align-items: center;
 }
