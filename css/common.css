@@ -1,15 +1,26 @@
 .delimiter {
-    border-bottom: 1px solid var(--bg-color);
+    border-bottom: 1px solid lightgray;
     align-self: stretch; /* Delimiters dissapear if items are center aligned */
 }
 
 .delimiter.vertical {
     border: none;
-    border-right: 1px solid var(--bg-color);
+    border-right: 1px solid lightgray;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.wrapper > .side {
+    flex: 1;
+    background-color: var(--secondary-color);
 }
 
 .main-content {
-    flex: 1;
+    flex: 6;
     background-color: var(--main-color);
 }
 
@@ -27,6 +38,7 @@
 
 :root {
     --main-color: #fafafa; 
+    --secondary-color: #fd0;
     --bg-color: #444;
     --text-color: #0f0f0f;
     --nav-height: 500px;

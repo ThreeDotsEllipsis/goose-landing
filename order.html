@@ -12,50 +12,58 @@
 </head>
 
 <body>
-    <div class="main-content">
-        <div class="image-view">
-            <button type="button" class="back">&lt;</button>
-            <button type="button" class="next">&gt;</button>
+    <div class="wrapper">
+        <div class="side">
+        </div>
 
-            <div class="index">
+        <div class="main-content">
+            <div class="image-view">
+                <button type="button" class="back">&lt;</button>
+                <button type="button" class="next">&gt;</button>
+
+                <div class="index">
+                </div>
+
+                <div class="overflow-window">
+                    <div class="image-line">
+                    </div>
+                </div>
             </div>
 
-            <div class="overflow-window">
-                <div class="image-line">
+            <div class="delimiter vertical"></div>
+
+            <div class="options">
+                <div class="size">
+                    <input type="radio" name="size" id="50cm">
+                    <label for="50cm">50см</label>
+
+                    <input type="radio" name="size" id="1m" checked>
+                    <label for="1m">1м</label>
+
+                    <input type="radio" name="size" id="2m">
+                    <label for="2m">2м</label>
                 </div>
+
+                <div class="delimiter"></div>
+
+                <div class="color">
+                    <input type="radio" name="color" id="black">
+                    <label for="black">чёрный</label>
+
+                    <input type="radio" name="color" id="white" checked>
+                    <label for="white">белый</label>
+
+                    <input type="radio" name="color" id="brown">
+                    <label for="brown">коричневый</label>
+                </div>
+
+                <div class="delimiter"></div>
+
+                <button type="button">Заказать</button>
             </div>
         </div>
 
-        <div class="delimiter vertical"></div>
-
-        <div class="options">
-            <div class="size">
-                <input type="radio" name="size" id="50cm">
-                <label for="50cm">50см</label>
-
-                <input type="radio" name="size" id="1m" checked>
-                <label for="1m">1м</label>
-
-                <input type="radio" name="size" id="2m">
-                <label for="2m">2м</label>
-            </div>
-
-            <div class="delimiter"></div>
-
-            <div class="color">
-                <input type="radio" name="color" id="black">
-                <label for="black">чёрный</label>
-
-                <input type="radio" name="color" id="white" checked>
-                <label for="white">белый</label>
-
-                <input type="radio" name="color" id="brown">
-                <label for="brown">коричневый</label>
-            </div>
-
-            <div class="delimiter"></div>
-
-            <button type="button">Заказать</button>
+        <div class="side">
         </div>
     </div>
 </body>

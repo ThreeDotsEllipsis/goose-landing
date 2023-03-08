@@ -7,14 +7,13 @@ header a[href*="order"] {
 }
 
 .main-content {
-    width: 1500px;
     display: flex;
     align-self: center;
     align-items: center;
     gap: 64px;
-    padding: 64px;
-    padding-right: 0px;
-    padding-left: 128px;
+    /* padding: 64px; */
+    /* padding-right: 0px; */
+    /* padding-left: 128px; */
 }
 
 .main-content .options {

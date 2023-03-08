@@ -6,7 +6,6 @@ header .logo a {
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
-    width: 1300px;
     align-self: center;
 }
 
@@ -85,7 +84,7 @@ header .logo a {
 }
 
 .catalogue img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
