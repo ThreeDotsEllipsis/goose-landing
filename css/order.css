@@ -10,7 +10,7 @@ header a[href*="order"] {
     display: flex;
     align-self: center;
     align-items: center;
-    gap: 24px;
+    gap: 1.3rem;
     padding: 64px;
     padding-right: 32px;
     padding-left: 98px;
@@ -106,11 +106,11 @@ header a[href*="order"] {
 }
 
 .main-content .image-view .back {
-    left: -78px;
+    left: -3.4rem;
 }
 
 .main-content .image-view .next {
-    right: -78px;
+    right: -3.4rem;
 }
 
 .main-content .index {

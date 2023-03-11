@@ -41,9 +41,9 @@
     --secondary-color: #fd0;
     --bg-color: #444;
     --text-color: #0f0f0f;
-    --nav-height: 500px;
+    --nav-height: 54vh;
 
-    font-size: 24px;
+    font-size: 1.4vw;
 }
 
 * {
@@ -158,7 +158,7 @@ footer .contact-info {
     gap: 42px;
     padding-top: 0.5rem;
     color: var(--main-color);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 footer ul {

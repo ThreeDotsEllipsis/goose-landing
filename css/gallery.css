@@ -20,7 +20,7 @@ header a[href*="gallery"] {
 }
 
 .main-content img {
-    width: 400px;
+    width: 14rem;
     height: auto;
     transition: scale 0.4s;
 }
