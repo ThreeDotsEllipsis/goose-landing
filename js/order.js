@@ -34,6 +34,10 @@ function createImages(type) {
         image.src = images[type][i];
         image.id = i;
         imageLine.appendChild(image);
+
+        image.addEventListener("load", () => {
+            image.classList.add("animate");
+        });
     }
 
 }

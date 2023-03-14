@@ -75,6 +75,7 @@ header .logo a {
     font-size: 1.5rem;
     text-decoration: none;
     padding: 0.4rem;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 header input {
@@ -85,7 +86,7 @@ header label {
     font-size: 1.5rem;
     color: var(--main-color);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.2s, color 0.2s;
     z-index: 1;
     padding: 0.4rem;
     padding-top: 0.3rem;
@@ -119,6 +120,7 @@ nav .nav-content a {
     color: var(--main-color);
     text-decoration: none;
     padding: 0.6rem;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 header input:checked ~ label {
