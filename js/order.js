@@ -75,5 +75,3 @@ backButton.addEventListener("click", switchImages);
 nextButton.addEventListener("click", switchImages);
 
 createImages("white");
-
-
