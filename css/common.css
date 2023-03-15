@@ -76,6 +76,7 @@ header .logo a {
     text-decoration: none;
     padding: 0.4rem;
     transition: background-color 0.2s, color 0.2s;
+    background-color: #4f4f4f;
 }
 
 header input {
@@ -93,6 +94,10 @@ header label {
     vertical-align: center;
 }
 
+header [for="nav-button"] {
+    background-color: #4f4f4f;
+}
+
 nav {
     position: absolute;
     height: var(--nav-height);
@@ -106,6 +111,7 @@ nav {
     padding: 1rem;
     padding-top: 5rem;
 }
+
 
 nav .nav-content {
     list-style-type: none;
@@ -121,6 +127,7 @@ nav .nav-content a {
     text-decoration: none;
     padding: 0.6rem;
     transition: background-color 0.2s, color 0.2s;
+    background-color: #4f4f4f;
 }
 
 header input:checked ~ label {
