@@ -58,7 +58,6 @@ function switchImages(button) {
         }
     }
 
-    console.log(shiftAmount)
     imageLine.style.left = `-${shiftAmount * index}px`;
 
     document.querySelector(`input[id="${index}"]`).checked = true;
@@ -66,7 +65,17 @@ function switchImages(button) {
 
 colorInputs.forEach((input) => {
     input.addEventListener("click", () => {
-        imageLine.style.left = "0";
+        if (imageLine.style.left != "0px" && imageLine.style.left != "") {
+            imageLine.style.transitionDuration = "1ms";
+            imageLine.style.left = "0px";
+        }
+
+        imageLine.addEventListener("transitionend", (event) => {
+            if (event.propertyName == "left") {
+                imageLine.style.transitionDuration = "0.8s";
+            }
+        });
+
         createImages(input.id);
     });
 });
