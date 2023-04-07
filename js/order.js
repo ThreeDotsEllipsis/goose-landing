@@ -109,4 +109,8 @@ createImages("white");
 window.addEventListener("resize", () => {
     animateUnderline(document.querySelector(".size input:checked"), sizeUnderline);
     animateUnderline(document.querySelector(".color input:checked"), colorUnderline);
+
+    let shiftAmount = document.querySelector(".image-view").offsetWidth;
+    let index = Number(document.querySelector(".index input:checked").id);
+    imageLine.style.left = `-${shiftAmount * index}px`;
 });
