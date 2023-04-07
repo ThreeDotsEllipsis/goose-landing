@@ -142,8 +142,8 @@ header a[href*="order"] {
     appearance: none;
 
     display: inline-block;
-    width: 16px; 
-    height: 16px;  
+    width: 16px;
+    height: 16px;
     padding: 10px;
     border: 5px solid var(--bg-color);
     border-radius: 50%;
@@ -174,7 +174,6 @@ header a[href*="order"] {
     opacity: 1;
 }
 
-/* underline animation */
 .options .size {
     position: relative;
 }
@@ -183,60 +182,15 @@ header a[href*="order"] {
     position: relative;
 }
 
-.underline,
-.underline2 {
-    position: absolute;
+.underline {
+    position: fixed;
     border-bottom: 1px solid var(--text-color);
     transition: border-color 0.2s, left 0.3s, right 0.3s;
     pointer-events: none;
     user-select: none;
-    top: 80%;
 }
 
-/* .underline { */
-/*     top: 80%; */
-/*     right: 72%; */
-/*     left: 5%; */
-/* } */
 
-/* .underline2 { */
-/*     top: 80%; */
-/*     right: 75%; */
-/*     left: 5%; */
-/* } */
-
-.options .size input:checked + label:hover ~ .underline,
-.options .color input:checked + label:hover ~ .underline2 {
+input:checked+label:hover~.underline {
     border-color: var(--main-color);
 }
-
-.options .size input[id="50cm"]:checked ~ .underline{
-    right: 73%;
-    left: 5%;
-}
-
-.options .size input[id="1m"]:checked ~ .underline{
-    right: 39%;
-    left: 39%;
-}
-
-.options .size input[id="2m"]:checked ~ .underline{
-    right: 5%;
-    left: 73%;
-}
-
-.options .color input[id="black"]:checked ~ .underline2{
-    right: 78%;
-    left: 4%;
-}
-
-.options .color input[id="white"]:checked ~ .underline2{
-    right: 51%;
-    left: 32%;
-}
-
-.options .color input[id="brown"]:checked ~ .underline2{
-    right: 4%;
-    left: 59%;
-}
-/* underline animation end */
