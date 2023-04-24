@@ -63,15 +63,16 @@ header .logo a {
     border: none;
     background-color: transparent;
     font-size: 1.4rem;
-    padding: 0.5rem;
+    padding: 0.6rem;
     text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
     transition: background-color 0.2s;
 }
 
 .order a:hover {
     background-color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .main-content .info .image,
