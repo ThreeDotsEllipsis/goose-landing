@@ -39,7 +39,7 @@
 :root {
     --main-color: #fafafa; 
     --secondary-color: #fd4;
-    --bg-color: #444;
+    --bg-color: #484848;
     --text-color: #0f0f0f;
     --nav-height: 54vh;
 
@@ -50,6 +50,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+a, button, label, img {
+    border-radius: 2px;
 }
 
 body {
@@ -101,15 +105,18 @@ header [for="nav-button"] {
 nav {
     position: absolute;
     height: var(--nav-height);
-    top: calc(0px - var(--nav-height));
+    bottom: 0;
     right: 0;
-    transition: top 0.3s;
+    transition: bottom 0.3s;
     background-color: var(--bg-color);
     width: calc(var(--nav-height) / 1.5);
     display: flex;
     justify-content: center;
     padding: 1rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
+
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 
@@ -117,7 +124,7 @@ nav .nav-content {
     list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
-    gap: 2.8rem;
+    gap: 3.4rem;
     align-items: center;
 }
 
@@ -135,7 +142,7 @@ header input:checked ~ label {
 }
 
 header input:checked ~ nav {
-    top: 0px;
+    bottom: calc(-1 * var(--nav-height));
 }
 
 header a:hover,
@@ -154,8 +161,8 @@ footer .logo {
     color: var(--main-color);
     padding: 0.8rem 2rem;
     position: relative;
-    border-radius: 100%;
-    top: -24px;
+    border-radius: 50%;
+    top: -1rem;
     background-color: var(--bg-color);
     font-size: 1.4rem;
     margin: 0px 0.5rem;
