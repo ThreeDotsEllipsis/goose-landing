@@ -11,17 +11,14 @@ header a[href*="gallery"] {
 
 .main-content .gallery {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
     padding: 64px;
 }
 
 .main-content img {
-    width: 22rem;
-    height: auto;
+    width: 100%;
     transition: scale 0.4s;
 }
 
