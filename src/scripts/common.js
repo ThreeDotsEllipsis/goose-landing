@@ -3,14 +3,14 @@ body.insertAdjacentHTML(
     'afterbegin',
     `
     <header>
-        <div class="logo"><a href="index.html">Гусь</a></div>
+        <div class="logo"><a href="/index.html">Гусь</a></div>
         <input type="checkbox" id="nav-button">
         <label for="nav-button">≣</label>
         <nav>
             <ul class="nav-content">
-                <li><a href="order.html">Заказать</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="about.html">Контакты</a></li>
+                <li><a href="/src/pages/order.html">Заказать</a></li>
+                <li><a href="/src/pages/gallery.html">Галерея</a></li>
+                <li><a href="/src/pages/about.html">Контакты</a></li>
             </ul>
         </nav>
     </header>

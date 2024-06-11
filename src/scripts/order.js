@@ -1,7 +1,7 @@
 let images = {
-    black: ["imgs/black.avif", "imgs/black2.jpg"],
-    white: ["imgs/white.avif", "imgs/white2.jpg"],
-    brown: ["imgs/brown.avif", "imgs/brown2.jpg"],
+    black: ["../images/black.avif", "../images/black2.jpg"],
+    white: ["../images/white.avif", "../images/white2.jpg"],
+    brown: ["../images/brown.avif", "../images/brown2.jpg"],
 };
 
 let imageLine = document.querySelector(".image-line");
